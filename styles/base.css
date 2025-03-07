@@ -18,6 +18,7 @@ main {
 }
 .navigation-bar a {
     color: black;
+    font-weight: 700;
 }
 .navigation-bar {
     background-color: gray;
