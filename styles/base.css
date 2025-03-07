@@ -1,0 +1,166 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Nunito", sans-serif;
+}
+main {
+    padding: 20px;
+    margin: 40px;
+}
+.top-container {
+    background-color: steelblue;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+.yellow-text {
+    color: yellow;
+}
+.navigation-bar a {
+    color: white;
+}
+.navigation-bar {
+    background-color: gray;
+    padding: 15px;
+    display: flex;
+    justify-content: space-around;
+}
+a {
+    text-decoration: none;
+}
+.navigation-bar a:hover {
+    text-decoration: underline overline;
+    text-decoration-thickness: 2px; /* Adjusts line thickness */
+    text-underline-offset: 3px; /* Adjusts underline spacing */
+}
+.page {
+    display: grid;
+    grid-template-columns: 2fr 1fr; /* Defines two columns */
+    gap: 25px;
+    padding: 10px;
+    max-width: 1920px;
+}
+.grid-headers{
+    background-color: steelblue;
+    border-top-left-radius: 10px; /* Ensures smooth transition */
+    border-top-right-radius: 10px;
+    color: white;
+    text-align: center;
+    padding: 5px;
+}
+.card, .card2 {
+    border: 1px solid grey; 
+    border-radius: 10px;
+
+}
+.card2 {
+    grid-column: 2 / 3;
+}
+.grid-contents {
+    display: flex;
+    justify-content: center; 
+    height: 50vh;
+    flex-direction: column; /* To keep list in a straight form */
+    padding: 30px;
+}
+.extracss{
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+.about, .about2 {
+    display: flex;
+    margin: 20px;
+    padding: 20px;
+    padding-bottom: 0;
+    gap: 9px;
+}
+figcaption {
+    font-size: 0.7rem;
+    text-align: center;
+}
+h3 {
+    text-align: center;
+}
+.underline {
+    position: relative; 
+    display: inline-block;
+    padding-left: 20%;
+  }
+  .underline::after {
+    content: ""; 
+    position: absolute; 
+    left: 75%;
+    transform: translateX(-50%); 
+    bottom: -0.3rem; 
+    width: 130%; 
+    border-bottom: 1px solid black; 
+  }
+#lastModified {
+    color: yellow;
+}
+footer{
+    background-color: steelblue;
+    text-align: center;
+    padding: 10px;
+}
+
+/* Media Query for Tablets */
+@media screen and (max-width: 768px) {
+    .page {
+        grid-template-columns: 1fr; 
+    }
+    
+    .card2 {
+        grid-column: auto;
+    }
+
+    .navigation-bar {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .navigation-bar a {
+        display: block;
+        text-align: center;
+        width: 100%;
+        padding: 10px 0;
+    }
+}
+
+/* Media Query for Mobile Devices */
+@media screen and (max-width: 480px) {
+    .top-container {
+        font-size: 1.2rem;
+        padding: 15px;
+    }
+
+    .about, .about2 {
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+    }
+
+    .about img, .about2 img {
+        width: 100%;
+        max-width: 200px;
+    }
+
+    .grid-contents {
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+    }
+
+    .underline {
+        padding-left: 10%;
+    }
+
+    .underline::after {
+        width: 100%;
+    }
+
+    footer {
+        padding: 15px;
+    }
+}
