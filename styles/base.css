@@ -64,6 +64,9 @@ a {
     flex-direction: column; /* To keep list in a straight form */
     padding: 30px;
 }
+li{
+    padding: 5px;
+}
 .extracss{
     justify-content: center;
     align-items: center;
