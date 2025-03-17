@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping list example</title>
+    <style>
+      li {
+        margin-bottom: 10px;
+      }
+
+      li button {
+        font-size: 12px;
+        margin-left: 20px;
+        color: #666;
+      }
+    </style>
+  </head>
+  <body>
+
+    <h1>My shopping list</h1>
+
+    <div>
+      <label for="item">Enter a new item:</label>
+      <input type="text" name="item" id="item">
+      <button>Add item</button>
+    </div>
+
+    <ul>
+
+    </ul>
+
+    <script>
+        // Step 1: Get references to the necessary elements
+const list = document.querySelector("ul");
+const input = document.querySelector("#item");
+const button = document.querySelector("button");
+
+// Step 2: Function to handle adding an item
+button.addEventListener("click", function () {
+    // Step 3: Store the input value
+    const itemText = input.value.trim(); // Remove extra spaces
+
+    // Step 4: Clear the input field
+    input.value = "";
+
+    // Step 5: Prevent adding empty items
+    if (itemText === "") {
+        alert("Please enter an item!");
+        return;
+    }
+
+    // Step 6: Create new elements
+    const listItem = document.createElement("li");
+    const itemSpan = document.createElement("span");
+    const deleteBtn = document.createElement("button");
+
+    // Step 7: Append span and button to the list item
+    listItem.appendChild(itemSpan);
+    listItem.appendChild(deleteBtn);
+
+    // Step 8: Set text content
+    itemSpan.textContent = itemText;
+    deleteBtn.textContent = "Delete";
+
+    // Step 9: Append list item to the list
+    list.appendChild(listItem);
+
+    // Step 10: Add event listener to delete button
+    deleteBtn.addEventListener("click", function () {
+        list.removeChild(listItem);
+    });
+
+    // Step 11: Focus input for next item
+    input.focus();
+});
+
+    </script>
+  </body>
+</html>
