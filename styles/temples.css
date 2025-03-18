@@ -29,6 +29,7 @@ nav {
 
 #menu::before {
 	content: "☰";
+	color: black;
 }
 
 #menu.open::before {
