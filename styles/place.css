@@ -1,0 +1,68 @@
+:root {
+	--primary-color: #008751 ;
+	--secondary-color: white;
+	--accent1: black;
+    --font: 'Nunito', sans-serif;
+  }
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--font);
+}
+.country-name {
+    background-color: var(--primary-color);
+    text-align: center;
+    color: var(--secondary-color);
+}
+h1, h2 {
+    padding: 10px 20px 5px 20px;
+}
+
+.hero img {
+    width: 100%;
+    height: auto;
+  }
+.country-data {
+    text-align: center;
+    font-family: Arial, sans-serif;
+    background-color: var(--secondary-color);
+    color: var(--accent1);
+    padding: 20px;
+}
+.weather {
+    text-align: center;
+    font-family: Arial, sans-serif;
+    background-color: var(--secondary-color);
+    color: var(--accent1);
+    padding-bottom: 10px;
+}
+strong {
+    font-weight: bold;
+}
+
+.phone-weather {
+    width: 100px;
+    padding: 0;
+}
+
+
+
+#lastModified {
+    color: var(--accent1);
+    font-weight: 700;
+    padding: 5px;
+    color: var(--secondary-color);
+}
+#currentyear{
+    font-weight: 700;
+    padding: 5px;
+}
+footer{
+    background-color: var(--primary-color);
+    text-align: center;
+    padding: 10px;
+    color: var(--secondary-color);
+    padding: 35px;
+}
+  
