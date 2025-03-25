@@ -27,7 +27,7 @@
         margin: -15px -15px 10px -15px;
         border-radius: 5px 5px 0 0;
     }
-    .weather-icon::before {
+    .weather-icon::after {
         content: "⛅";
     }
     .phone-weather {
