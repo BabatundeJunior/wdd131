@@ -96,17 +96,10 @@ main {
     text-align: center;
 }
 
-.temple-card img {
-    width: 100%;
-    height: auto;
-    border-radius: 8px;
-}
-
-
 /* Temple card image */
 .temple-card img {
     width: 100%;
-    height: auto;
+    height: 200px;
     border-radius: 8px;
     object-fit: cover;
 }
