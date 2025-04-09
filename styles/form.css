@@ -1,0 +1,122 @@
+:root {
+	--primary-color: steelblue;
+	--secondary-color: gray;
+	--accent1: black;
+    --accent2: #fff;
+    --accent4: #333;
+    --accent5: gold;
+    --shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+
+body {
+    font-family: "Nunito", sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: var(--accent2);
+}
+
+header {
+    text-align: center;
+    background-color: var(--primary-color);
+    color: var(--accent1);
+    padding: 10px;
+}
+
+main {
+    max-width: 500px;
+    margin: 20px auto;
+    background: var(--accent2);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: var(--shadow);
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label, legend {
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+input, select, textarea {
+    padding: 8px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button[type="submit"] {
+    background-color: var(--secondary-color);
+    color: var(--accent1);
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    margin-top: 15px;
+    cursor: pointer;
+}
+
+button[type="submit"]:hover {
+    background-color: var(--primary-color);
+}
+
+fieldset {
+    border: none;
+    margin: 10px 0;
+}
+
+
+.rating {
+    display: flex;
+    flex-direction: row-reverse; 
+    justify-content: start;
+    gap: 5px;
+    border: none;
+}
+
+.rating input {
+    display: none; 
+}
+
+.rating label {
+    font-size: 2rem;
+    color: var(--secondary-color);
+    cursor: pointer;
+    transition: color 0.3s;
+}
+
+/* Change star color on hover and selection */
+.rating input:checked ~ label,
+.rating label:hover,
+.rating label:hover ~ label {
+    color: var(--accent5);
+}
+
+.features {
+    display: flex;
+    flex-direction: column; 
+    gap: 5px; 
+}
+
+#review {
+    align-items: center;
+    height: 10vh;
+}
+
+#lastModified {
+    color: var(--accent1);
+    font-weight: 700;
+    padding: 5px;
+}
+#currentyear{
+    font-weight: 700;
+    padding: 5px;
+}
+footer{
+    background-color: var(--primary-color);
+    text-align: center;
+    padding: 10px;
+}
