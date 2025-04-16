@@ -6,7 +6,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="description" content="Babatunde Junior | WDD 131 – Dynamic Web Fundamentals">
         <meta name="author" content="Babatunde Junior">
-        <title>WDD 131 – Dynamic Web Fundamentals - Babatunde Junior</title>
+        <title>Register</title>
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">   
@@ -14,6 +14,8 @@
         <link rel="stylesheet" href="styles/acad-large.css">
         <script src="scripts/ham-menu.js" defer></script>
         <script src="../scripts/getdates.js" defer></script>
+        <script src="scripts/register.js" defer></script>
+
     </head>
 <body>
     <header class="top"> 
@@ -36,44 +38,83 @@
 
     <main>
 
+        <section class="register-section">
+            <div class="register-container">
+              <h2>Course Enrollment</h2>
+              <form id="enrollForm">
+                <label for="fullname">Full Name</label>
+                <input type="text" id="fullname" name="fullname" required />
         
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required />
+        
+                <label for="phone">Phone Number</label>
+                <input type="tel" id="phone" name="phone" required />
+        
+                <label for="course">Select Course</label>
+                <select id="course" name="course" required>
+                  <option value="" disabled selected>Select a course</option>
+                  <option value="Data Science and Machine Learning">Data Science and Machine Learning</option>
+                  <option value="Full Stack Development">Full Stack Development</option>
+                  <option value="Forex/Crypto Trading">Forex/Crypto Trading</option>
+                  <option value="Graphics Design">Graphics Design</option>
+                  <option value="Video Editing">Video Editing</option>
+                  <option value="Electronic Publishing">Electronic Publishing</option>
+                  <option value="Foreign Languages">Foreign Languages</option>
+                  <option value="JAMB/WAEC Prep">JAMB/WAEC Prep</option>
+                  <option value="Digital Marketing">Digital Marketing</option>
+                  <option value="Shopify">Shopify</option>
+                  <option value="Dropshipping">Dropshipping</option>
+                </select>
+        
+                <button type="submit">Submit</button>
+              </form>
+            </div>
+          </section>
     </main>
 
 
 
     <footer class="site-footer">
-        <div class="footer-content">
-          <div class="footer-brand">
-            <h3>ACAD Connect</h3>
-            <p>From learning to earning — your journey starts here.</p>
-          </div>
-      
-          <div class="footer-links">
-            <h4>Quick Links</h4>
-            <ul>
-              <li><a href="home.html">Home</a></li>
-              <li><a href="about.html">About</a></li>
-              <li><a href="courses.html">Courses</a></li>
-              <li><a href="contact.html">Contact</a></li>
-            </ul>
-          </div>
-      
-          <div class="footer-social">
-            <h4>Follow Us</h4>
-            <div class="social-icons">
-              <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
-              <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
-              <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
-              <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
-            </div>
+      <div class="footer-content">
+        <div class="footer-brand">
+          <h3>ACAD Connect</h3>
+          <p>From learning to earning — your journey starts here.</p>
+        </div>
+    
+        <div class="footer-links">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="courses.html">Courses</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+    
+        <div class="footer-social">
+          <h4>Follow Us</h4>
+          <div class="social-icons">
+            <a href="https://web.facebook.com/profile.php?id=100095205573527" aria-label="Facebook" target="_blank">
+              <img src="images/facebook.png" alt="Facebook" />
+            </a>
+
+            <a href="https://www.linkedin.com/company/acadconnect/" aria-label="LinkedIn" target="_blank">
+              <img src="images/linkedin.png" alt="LinkedIn" />
+            </a>
           </div>
         </div>
-      
-        <div class="footer-bottom">
-          <p><span id="currentyear"></span></p>
-          <p id="lastModified"></p>
-        </div>
-      </footer>
+        
+      </div>
+    
+      <div class="footer-bottom">
+        <p><span id="currentyear"></span></p>
+        <p id="lastModified"></p>
+      </div>
+    </footer>
+
+    <a href="saved.html" class="floating-saved-btn">❤️ Saved Courses</a>
+
     
 </body>
 </html>

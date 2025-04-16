@@ -19,7 +19,7 @@ let savedTitles = JSON.parse(localStorage.getItem('savedCourses')) || [];
 function removeSavedCourse(title) {
   savedTitles = savedTitles.filter(saved => saved !== title);
   localStorage.setItem('savedCourses', JSON.stringify(savedTitles));
-  location.reload(); // reload to update the UI
+  location.reload(); 
 }
 
 if (savedTitles.length === 0) {
@@ -36,6 +36,14 @@ if (savedTitles.length === 0) {
       <a href="register.html" class="enroll-btn">Enroll Now</a>
       <button class="remove-btn">Remove</button>
     `;
+
+      // Set course in localStorage when "Enroll Now" is clicked
+  const enrollBtn = card.querySelector('.enroll-btn');
+  enrollBtn.addEventListener('click', (e) => {
+    e.preventDefault(); // prevent default link behavior for a moment
+    localStorage.setItem('selectedCourse', course.title);
+    window.location.href = enrollBtn.href; // Navigate to the enroll page
+  });
 
     card.querySelector('.remove-btn').addEventListener('click', () => removeSavedCourse(course.title));
     savedCoursesContainer.appendChild(card);
