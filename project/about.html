@@ -1,11 +1,126 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Babatunde Junior | WDD 131 – Dynamic Web Fundamentals">
+        <meta name="author" content="Babatunde Junior">
+        <title>WDD 131 – Dynamic Web Fundamentals - Babatunde Junior</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">   
+        <link rel="stylesheet" href="styles/acad.css">
+        <link rel="stylesheet" href="styles/acad-large.css">
+        <script src="../scripts/getdates.js" defer></script>
+        <script src="scripts/ham-menu.js" defer></script>
+
+    </head>
 <body>
+    <header class="top"> 
+        <section class="left-header">
+            <img src="images/acadlogo.webp" alt="acadConnect logo">  
+            <h1>ACADCONNECT</h1>
+        </section> 
+
+        <button type="button" id="menu"></button>
+        <nav>
+            <ul class="navigation">
+                <li><a href="home.html" rel="noopener noreferrer" class="">Home</a></li>
+                <li><a href="about.html" rel="noopener noreferrer">About</a></li>
+                <li><a href="courses.html" rel="noopener noreferrer">Courses</a></li>
+                <li><a href="contact.html" rel="noopener noreferrer">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <main>
+        <section class="about-hero">
+            <h2 id="about-header">About ACAD Connect</h2>
+            <p>From learning to earning — empowering Nigerian students to reach their goals.</p>
+          </section>
+          
+          <section class="about-story">
+            <h2>Our Story</h2>
+            <p>ACAD Connect was born out of a real need — Nigerian students with 
+                talent, ambition, and dreams were being held back by limited access 
+                to quality learning, mentorship, and job placement. We saw countless 
+                students completing degrees without the tools needed to thrive in the 
+                real world. So we decided to do something about it.
+                Our journey began with a simple goal: to bridge the gap 
+                between education and opportunity. Today, ACAD Connect is more than just a platform — 
+                it’s a movement. We're empowering students with relevant skills, 
+                connecting them to real-world opportunities, and giving them the 
+                confidence to walk into interviews, freelance projects, or business 
+                pitches and own the room.</p>
+          </section>
+          
+          <section class="about-mission">
+            <h2>Our Mission</h2>
+            <p>Our mission is to make high-quality, industry-relevant 
+                education accessible to every Nigerian student, no matter
+                where they are. We want to equip you not just with 
+                knowledge, but with skills that pay — and help you 
+                build a future you're proud of.Whether you're trying to 
+                land your first job, build a portfolio, start freelancing, or 
+                just learn how to write a killer resume — ACAD Connect has your 
+                back.</p>
+          </section>
+          
+          <section class="about-values">
+            <h2>Our Values</h2>
+            <ul>
+              <li>📚 Real-World Learning</li>
+              <li>💼 Career-Driven Curriculum</li>
+              <li>🌍 Accessibility for All</li>
+              <li>👨🏽‍🏫 Mentorship & Guidance</li>
+              <li>🚀 Growth & Innovation</li>
+            </ul>
+          </section>
+          
+          <section class="about-cta">
+            <h3>Ready to Start Your Journey?</h3>
+            <a href="/courses.html" class="btn-join">Explore Courses</a>
+          </section>
+          
+    </main>
+
+
+
+    <footer class="site-footer">
+        <div class="footer-content">
+          <div class="footer-brand">
+            <h3>ACAD Connect</h3>
+            <p>From learning to earning — your journey starts here.</p>
+          </div>
+      
+          <div class="footer-links">
+            <h4>Quick Links</h4>
+            <ul>
+              <li><a href="home.html">Home</a></li>
+              <li><a href="about.html">About</a></li>
+              <li><a href="courses.html">Courses</a></li>
+              <li><a href="contact.html">Contact</a></li>
+            </ul>
+          </div>
+      
+          <div class="footer-social">
+            <h4>Follow Us</h4>
+            <div class="social-icons">
+              <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+              <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+              <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+              <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+          </div>
+        </div>
+      
+        <div class="footer-bottom">
+          <p><span id="currentyear"></span></p>
+          <p id="lastModified"></p>
+        </div>
+      </footer>
     
 </body>
 </html>

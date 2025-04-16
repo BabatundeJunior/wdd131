@@ -64,9 +64,9 @@ const testimonials = [
     showTestimonial(current);
   }
   
-  // Initial display
+  
   showTestimonial(current);
   
-  // Auto change every 5 seconds
+  
   setInterval(nextTestimonial, 5000);
   

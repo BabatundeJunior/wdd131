@@ -88,4 +88,9 @@
     font-size: 1.1em;
     padding: 1rem 2.5rem;
   }
+  .course-grid {
+    
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    
+  }
 }
