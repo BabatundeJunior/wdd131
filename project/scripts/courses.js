@@ -18,12 +18,12 @@ const popupClose = document.querySelector('.popup-close');
 
 function showPopup(message) {
   popupMessage.textContent = message;
-  popup.style.display = 'block'; // Show the popup
+  popup.style.display = 'block'; 
   
-  // Hide the popup after 3 seconds
+  
   setTimeout(() => {
     popup.style.display = 'none';
-  }, 2000); // 3000ms = 3 seconds
+  }, 2000); 
 }
 
 function saveCourse(title) {
@@ -47,15 +47,15 @@ courses.forEach(course => {
     <button class="save-btn">Save for Later</button>
   `;
 
-  // Save course when "Save for Later" is clicked
+  // Saves course when "Save for Later" is clicked
   card.querySelector('.save-btn').addEventListener('click', () => saveCourse(course.title));
 
-  // Set course in localStorage when "Enroll Now" is clicked
+  // to load selected course in enrolment
   const enrollBtn = card.querySelector('.enroll-btn');
   enrollBtn.addEventListener('click', (e) => {
-    e.preventDefault(); // prevent default link behavior for a moment
+    e.preventDefault(); 
     localStorage.setItem('selectedCourse', course.title);
-    window.location.href = enrollBtn.href; // Navigate to the enroll page
+    window.location.href = enrollBtn.href; 
   });
 
   courseGrid.appendChild(card);
@@ -69,6 +69,6 @@ popupClose.addEventListener('click', () => {
 // Close the popup if the user clicks outside the popup content
 window.addEventListener('click', (e) => {
   if (e.target === popup) {
-    popup.style.display = 'none'; // Hide the popup if clicked outside
+    popup.style.display = 'none'; // Hides the popup if clicked outside
   }
 });

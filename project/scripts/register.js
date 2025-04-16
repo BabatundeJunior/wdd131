@@ -9,14 +9,13 @@ document.addEventListener("DOMContentLoaded", () => {
           break;
         }
       }
-      localStorage.removeItem("selectedCourse"); // clear after use
+      localStorage.removeItem("selectedCourse"); 
     }
   
     const form = document.getElementById("registerForm");
     form.addEventListener("submit", (e) => {
       e.preventDefault();
   
-      // You can replace this with actual email or backend handling later
       alert("Registration submitted successfully!");
       form.reset();
     });
