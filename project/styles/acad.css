@@ -607,8 +607,8 @@ nav {
     cursor: pointer;
   }
   #savedCourses p {
-    font-size: 2em;
-    padding: 18px;
+    font-size: 1.5em;
+    padding: 5em;
     background-color: var(--acad-light-gray);
     text-align: center;
   }
