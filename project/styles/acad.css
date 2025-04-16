@@ -270,21 +270,22 @@ nav {
     color: var(--acad-forest-green);
   }
   .site-footer {
-    background: var(--acad-royal-blue);
-    color: var(--accent1);
+    background: var(--gradient);
+    color: var(--acad-white);
     padding: 2em 1em;
-    font-size: 0.9em;
+    font-size: 1em;
   }
   
   .footer-content {
     display: flex;
     flex-direction: column;
     gap: 2em;
+    font-size: 1.05em;
   }
   
   .footer-brand h3 {
     margin: 0;
-    font-size: 1.2em;
+    font-size: 1.5em;
   }
   
   .footer-links ul {
@@ -293,13 +294,14 @@ nav {
   }
   
   .footer-links a {
-    color: var(--accent1);
+    color: var(--acad-white);
     text-decoration: none;
+
   }
   
   .footer-social .social-icons a {
     margin-right: 0.8em;
-    font-size: 1.2em;
+    font-size: 1.05em;
     color: var(--accent1);
   }
   
